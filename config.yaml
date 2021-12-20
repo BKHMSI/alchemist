@@ -1,0 +1,44 @@
+run-title: A2C_EPN
+device: cpu
+seed: 42
+n-seeds: 1
+start-seed: 0
+load-path: ./ckpts/A2C_101_2/A2C_101_2_205000.pt
+save-path: ./ckpts
+log-path: logs
+save-interval: 1000
+resume: false
+start-episode: 0
+optimizer: adam
+test: true
+
+agent:
+  lr: 7.5e-4
+  gamma: .70
+  value-loss-weight: 0.5
+  entropy-weight: 0.1
+  n-step-update: 20
+
+  grad-clip-norm: 100
+
+  obs-dim: 21
+  hidden-dim: 256
+  encoder: [32, 32]
+
+  attn-num-iter: 1
+  attn-num-heads: 4
+  attn-dim: 64
+
+  dict-len: 150
+  memory-dim: 1
+
+  n-workers: 16
+
+task:
+  n-episodes: 500_000
+  n-actions: 22
+  n-potions: 8
+  n-rewards: 1
+
+train:
+  epochs: 100
