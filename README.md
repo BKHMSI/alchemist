@@ -29,9 +29,9 @@ pip install -r requirements.txt
 
 ## Pretrained Models
 
-- [Best A2C EPN agent](https://drive.google.com/file/d/10lOUNjVGMtYyHo258PPMMbhz74yHgIS-/view?usp=sharing) achieves an average episode score of 272.85 ± 1.78 with the modified representations.
+- [Best A2C EPN agent](https://drive.google.com/file/d/1TLbgEzFcBT7t-B4hM6wus5PC1Eaz36Np/view?usp=sharing) achieves an average episode score of 272.85 ± 1.78 with the modified representations.
 
-- [A2C EPN agent](https://drive.google.com/file/d/1TLbgEzFcBT7t-B4hM6wus5PC1Eaz36Np/view?usp=sharing) trained without extra reward shaping (i.e. penalties) achieves a score of 236.06 ± 2.18. 
+- [A2C EPN agent](https://drive.google.com/file/d/10lOUNjVGMtYyHo258PPMMbhz74yHgIS-/view?usp=sharing) trained without extra reward shaping (i.e. penalties) achieves a score of 236.06 ± 2.18. 
 
 ## Abstract 
 
